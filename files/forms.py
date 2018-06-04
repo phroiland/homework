@@ -5,7 +5,7 @@ from . import models
 class FileForm(forms.ModelForm):
     class Meta:
         model = models.File
-        fields = ('user', )
+        fields = ('user', 'datafile', )
 
 
     def __init__(self, *args, **kwargs):

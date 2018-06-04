@@ -20,9 +20,9 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.HomePage.as_view(), name='home'),
+    url(r'^files/', include('files.urls', namespace='files')),
     url(r'^login/', include('login.urls', namespace='login')),
     url(r'^login/', include('django.contrib.auth.urls')),
-    url(r'^files/', include('files.urls', namespace='files')),
     url(r'^test/$', views.TestPage.as_view(), name='test'),
     url(r'^thanks/$', views.ThanksPage.as_view(), name='thanks')
 ]

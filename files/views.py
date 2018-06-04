@@ -51,7 +51,7 @@ class FileDetail(SelectRelatedMixin, generic.DetailView):
 
 
 class CreateFile(LoginRequiredMixin, SelectRelatedMixin, generic.CreateView):
-    fields = ('datafile', 'user')
+    fields = ('user', 'datafile', )
     model = models.File
 
     def form_valid(self, form):
