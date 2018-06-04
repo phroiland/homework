@@ -3,6 +3,11 @@ from . import views
 
 app_name = 'files'
 
+
+'''
+    TODO: refactor endpoints to reflect gist requirements
+'''
+
 urlpatterns = [
     url(r"^$", views.FileList.as_view(), name="all"),
     url(r"new/$", views.CreateFile.as_view(), name="create"),

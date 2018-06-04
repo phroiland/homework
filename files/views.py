@@ -13,6 +13,9 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
+'''
+    TODO: Figure out why files aren't uploading more than once
+'''
 # Create your views here.
 class FileList(SelectRelatedMixin, generic.ListView):
     model = models.File

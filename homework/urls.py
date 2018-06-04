@@ -17,6 +17,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from . import views
 
+
+'''
+    TODO: refactor endpoints to reflect gist requirements
+'''
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.HomePage.as_view(), name='home'),
