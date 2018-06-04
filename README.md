@@ -1,4 +1,4 @@
-Setup and activate a virtualenv
+Setup and activate a [virtualenv](https://www.linkedin.com/pulse/setup-python-virtualenv-ubuntu-1604-jonathan-froiland/)
 
 ```
 $ mkdir venv
