@@ -10,7 +10,7 @@ $ source alchemy/bin/activate
 Clone repository
 
 ```
-$ git clone git@github.com:phroiland/homework.git
+$ git clone git@github.com:phroiland/homework.git or https://github.com/phroiland/homework.git
 $ cd homework
 ```
 Install requirements
