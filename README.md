@@ -36,8 +36,11 @@ $ python manage.py runserver
 
 
 <h2>TODO</h2>
+
 1. endpoints need to be refactored and redundancy needs to be removed to match gist. (i.e., register is under login)
 
-2. files can upload but unable to actually view. 
+2. files can upload but unable to actually view.
 
 3. django is recogninzing subsequent file uploads as already having been uploaded by the user--regardless of the file name.
+
+
