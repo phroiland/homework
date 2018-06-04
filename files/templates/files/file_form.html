@@ -1,0 +1,12 @@
+{% extends "files/file_base.html" %}
+
+{% load bootstrap3 %}
+
+{% block file_content %}
+<h4>Upload New File</h4>
+<form method="POST" action="{% url 'files:create' %}" id="postForm">
+	{% csrf_token %}
+	{% bootstrap_form form %}
+	<input type="submit" value="Post" class="btn btn-primary btn-large">
+</form>
+{% endblock %}

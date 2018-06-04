@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="files-page">
+	<div class="container">
+		<div class="row">
+			{% block prepost%}{% endblock %}
+			{% block file_content %}{% endblock %}
+			{% block post_file%}{% endblock %}
+		</div>
+	</div>
+</div>
+{% endblock %}

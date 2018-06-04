@@ -1,0 +1,15 @@
+{% extends 'files/file_base.html' %}
+
+{% block pre_post %}
+<div class="col-md-4">
+     <h1>@{{file_user.username}}</h1>
+</div>
+{% endblock %}
+
+{% block file_content %}
+<div class="col-md-8">
+    {% for file in file_list %}
+    {% include 'files/_file.html' %}
+    {% endfor %}
+</div>
+{% endblock %}

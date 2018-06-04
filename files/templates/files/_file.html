@@ -1,0 +1,17 @@
+<div class="file media">
+	<h3>{{ file.datafile_html|safe }}</h3>
+	<div class="media-body">
+		<h5 class="media-heading">
+			<span class="username"><a href="{% url 'files:for_user' username=file.user.username %}">@{{ file.user.username }}</a></span>
+			<time class="time"><a href="{% url 'files:single' username=file.user.username pk=file.pk %}">{{ file.created_at }}</a></time>
+		</h5>
+		<div class="media-footer">
+			{% if user.is_authenticated and file.user == user and not hide_delete %}
+				<a href="{% url 'files:delete' pk=file.pk %}" title="delete" class="btn btn-simple">
+					<span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span>
+					<span class="text-danger icon-label">Delete</span>
+				</a>
+			{% endif %}
+		</div>
+	</div>
+</div>

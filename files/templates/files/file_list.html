@@ -1,0 +1,10 @@
+{% extends 'files/file_base.html' %}
+{% load humanize %}
+
+{% block post_content %}
+<div class="col-md-8">
+    {% for file in file_list %}
+        {% include 'files/_file.html' %}
+    {% endfor %}
+</div>
+{% endblock %}
